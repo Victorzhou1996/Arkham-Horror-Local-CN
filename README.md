@@ -1,18 +1,17 @@
-# Arkham Companion
+# Arkham Horror Local CN
 
-Arkham Horror: The Card Game 的中文本地化、服务器版与 macOS 卡图伴随程序。
+Arkham Horror: The Card Game 的中文本地化、服务器版与 macOS 本地部署项目。
 
-Arkham Companion is a Chinese-localized distribution of Arkham Horror: The Card Game, including the server build, macOS local build materials, and a card-image companion app.
+Arkham Horror Local CN provides Chinese localization, self-hosted server packages, and macOS local deployment materials for Arkham Horror: The Card Game.
 
 ## 分支 / Branches
 
 | 分支 | 内容 |
 | --- | --- |
-| `Companion` | macOS Arkham Companion 源码、当前 App 包与内置卡图 |
 | `Mac` | 本地部署源码、启动配置与可运行资源 |
 | `Server` | 当前服务器源码、前端/Build 产物、后端可执行文件与部署配置 |
 
-The default branch is `Companion`. The `Mac` and `Server` branches are complete snapshots for their respective environments.
+The default branch is `Server`. Only the `Mac` and `Server` branches are retained. Git commit history remains intact.
 
 Latest source bundle and standalone packages: **[2026.10.15.1 / v20261015.1](server/RELEASE-20261015.md)**, pinned upstream `f6ed09be`.
 The old `server/source/` and `server/release/` directories remain historical Sept23 snapshots. Use the versioned source bundle below for current code; do not mistake historical snapshots for the new release.
@@ -79,3 +78,9 @@ This repository intentionally excludes live databases, user saves, credentials, 
 Thanks to [halogenandtoast/ArkhamHorror](https://github.com/halogenandtoast/ArkhamHorror) for the open-source project and game-logic foundation. Arkham Companion is a Chinese localization and distribution with server, card-image, and Companion improvements.
 
 Arkham Horror: The Card Game and related content are © Fantasy Flight Games. This project is unofficial and is not produced, endorsed, or affiliated with Fantasy Flight Games.
+
+## 仓库整理（2026-10-19）
+
+已合入 #15（Server） 的 UI 切换修复。本次仅整理仓库，没有重新编译、打包或部署。
+旧版本包目录已从 Server 当前分支移除，旧提交历史保留；最新版包保持原文件与校验值。
+独立 Companion 分支已停止保留，历史文档中的相关描述仅供追溯。

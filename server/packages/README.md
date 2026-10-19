@@ -2,65 +2,16 @@
 
 ## 最新版：2026-10-15 / v20261015.1
 
-- [Windows 完整 ZIP](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Companion/Server/server/packages/v20261015.1/ArkhamHorrorLocal-Windows-v20261015.1.zip)（1,845,502,971字节） · [SHA-256](v20261015.1/ArkhamHorrorLocal-Windows-v20261015.1.zip.sha256)
-- [Linux amd64 完整 tar.gz](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Companion/Server/server/packages/v20261015.1/ArkhamHorror-Server-Linux-amd64-v20261015.1.tar.gz)（1,844,634,101字节） · [SHA-256](v20261015.1/ArkhamHorror-Server-Linux-amd64-v20261015.1.tar.gz.sha256)
-- [对应源码 tar.gz](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Companion/Server/server/packages/v20261015.1/ArkhamHorror-Sources-v20261015.1.tar.gz) · [SHA-256](v20261015.1/ArkhamHorror-Sources-v20261015.1.tar.gz.sha256) · [源码清单](v20261015.1/SOURCE.json)
+- [Windows 完整 ZIP](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Horror-Local-CN/Server/server/packages/v20261015.1/ArkhamHorrorLocal-Windows-v20261015.1.zip)（1,845,502,971字节） · [SHA-256](v20261015.1/ArkhamHorrorLocal-Windows-v20261015.1.zip.sha256)
+- [Linux amd64 完整 tar.gz](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Horror-Local-CN/Server/server/packages/v20261015.1/ArkhamHorror-Server-Linux-amd64-v20261015.1.tar.gz)（1,844,634,101字节） · [SHA-256](v20261015.1/ArkhamHorror-Server-Linux-amd64-v20261015.1.tar.gz.sha256)
+- [对应源码 tar.gz](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Horror-Local-CN/Server/server/packages/v20261015.1/ArkhamHorror-Sources-v20261015.1.tar.gz) · [SHA-256](v20261015.1/ArkhamHorror-Sources-v20261015.1.tar.gz.sha256) · [源码清单](v20261015.1/SOURCE.json)
 - [更新与升级说明](../RELEASE-20261015.md) · [验证范围](v20261015.1/VERIFICATION.json) · **[Mac 重编译交接](../../docs/MAC-REBUILD-20261015.md)**
 
 本次为 Windows/Linux 与对应源码的发布，Mac 待原生重编译。游戏版本 `2026.10.15.1-shared-ui`，后端仍为10月9日固定版本；共享设置/导航、收藏、存档导出和创伤选择中文已更新。完整卡图、汉化、新旧UI和Build均保留。安装/升级遵循包内文档，先备份、停服，再解压到新目录，不覆盖用户数据。
 
 Git LFS 下载：`git lfs pull --include='server/packages/v20261015.1/*' --exclude=''`。GitHub Download ZIP不等于完整包。Linux校验：`python3 server/packaging/verify-self-hosted-package.py server/packages/v20261015.1/PACKAGE.json`。`server/source/`、`server/release/`仍为历史快照，最新版源码以本节版本化归档为准。
 
-## 历史版：2026-10-09 / v20261009.1
+## 旧版本与提交历史
 
-- [Windows 完整 ZIP](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Companion/Server/server/packages/v20261009.1/ArkhamHorrorLocal-Windows-v20261009.1.zip)（1,840,213,244字节） · [SHA-256](v20261009.1/ArkhamHorrorLocal-Windows-v20261009.1.zip.sha256)
-- [Linux amd64 完整 tar.gz](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Companion/Server/server/packages/v20261009.1/ArkhamHorror-Server-Linux-amd64-v20261009.1.tar.gz)（1,839,334,830字节） · [SHA-256](v20261009.1/ArkhamHorror-Server-Linux-amd64-v20261009.1.tar.gz.sha256)
-- [对应完整源码材料](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Companion/Server/server/packages/v20261009.1/ArkhamHorror-Sources-v20261009.1.tar.gz) · [源码清单](v20261009.1/SOURCE.json)
-- [更新内容与升级说明](../RELEASE-20261009.md) · [验证范围](v20261009.1/VERIFICATION.json)
-
-两个包均为本次重新生成的完整独立包，固定上游f6ed09be，语言zh-20261009-r9。包含五套新账号预组、完整暗物质Build文本、内嵌原生自制卡规则编辑器和Build卡库同步；保留新旧UI及既有修复。920处完全相同卡图共享存储，但全部原路径仍可用。不要将纯卡图去重ZIP当安装补丁。
-
-Windows需WSL2；Linux需amd64、Ubuntu24.04/glibc≥2.39。升级先备份并正常停旧版，解压到新目录并沿用外置数据，不覆盖运行中的安装。Linux校验：`python3 server/packaging/verify-self-hosted-package.py server/packages/v20261009.1/PACKAGE.json`。使用Git克隆后需 `git lfs pull --include='server/packages/v20261009.1/*' --exclude=''` 下载真实文件，GitHub的仓库Download ZIP不是完整游戏包。
-
-## 历史版本（下文不是当前版本）
-
-当前游戏版本：**2026.10.04.3-clue-load-decks**。Windows **v20261004.1** 与 Linux **v20261005.1** 游戏内容相同。[更新内容及验证限制](../RELEASE-20261005.md)。
-
-- [Linux v20261005.1 完整 tar.gz](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Companion/Server/server/packages/v20261005.1/ArkhamHorror-Server-Linux-amd64-v20261005.1.tar.gz) · [SHA-256](v20261005.1/ArkhamHorror-Server-Linux-amd64-v20261005.1.tar.gz.sha256) · [元数据](v20261005.1/PACKAGE.json)
-- [Windows v20261004.1 完整 ZIP](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Companion/Server/server/packages/v20261005.1/ArkhamHorrorLocal-Windows-v20261004.1.zip) · [SHA-256](v20261005.1/ArkhamHorrorLocal-Windows-v20261004.1.zip.sha256) · [元数据](v20261005.1/WINDOWS.json)
-- [最新源码 tar.gz](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Companion/Server/server/packages/v20261005.1/ArkhamHorror-Sources-v20261005.1.tar.gz) · [SHA-256](v20261005.1/ArkhamHorror-Sources-v20261005.1.tar.gz.sha256) · [内容及边界](v20261005.1/SOURCE.json)
-
-经典 UI `legacy-ui-20261004.5`，前端语言包 `zh-20261004-r4`，固定上游 `23e8991b`。新版源码归档内包含当前后端源码、Kaho 前端及 Online 独立布局覆盖文件；旧 `server/source/` / `server/release/` 目录不替换，不能当成最新代码。Linux 已在隔离原生环境验证12局游戏、7副牌组及重启数据保留；所有15754个归档文件哈希和Unix权限已校验。Windows 继承10月4日已验证包，未在本次重新打包。
-
-新版校验：`python3 server/packaging/verify-self-hosted-package.py server/packages/v20261005.1/PACKAGE.json`。
-
-以下 v20261002.1 下载与示例保留作历史参考，不是当前最新版。
-
-- [Linux 完整 tar.gz](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Companion/Server/server/packages/v20261002.1/ArkhamHorror-Server-Linux-amd64-v20261002.1.tar.gz) · [SHA-256](v20261002.1/ArkhamHorror-Server-Linux-amd64-v20261002.1.tar.gz.sha256) · [元数据](v20261002.1/PACKAGE.json)
-- [Windows 完整 ZIP](https://media.githubusercontent.com/media/Victorzhou1996/Arkham-Companion/Server/server/packages/v20261002.1/ArkhamHorrorLocal-Windows-v20261002.1.zip) · [SHA-256](v20261002.1/ArkhamHorrorLocal-Windows-v20261002.1.zip.sha256) · [元数据](v20261002.1/WINDOWS.json)
-- 安装与升级以各自包内 README / UPDATE 及管理工具说明为准。
-
-这是可独立运行的已编译完整包，不是源码压缩包或增量补丁。包含后端、PostgreSQL、内部 nginx、同源前端、经典界面、Build、完整卡图和 52 首音乐。不含个人账号、存档或密钥。Windows 包包含管理器，使用 WSL2；Linux 包不包含 Windows 管理器。
-
-支持 Ubuntu 24.04 x86-64 / glibc 2.39+，非 root 服务用户运行，持久数据在包外，内部端口只监听 127.0.0.1。公网部署需自行配置 HTTPS 反向代理。
-
-包采用普通自托管模式（online=false），禁用 Companion，不含运营站专用邮件验证、Bug/归档 Sidecar。**本次没有更新 `server/source/` 和 `server/release/` 旧快照**，不能将旧快照视为本包源码或将本包无条件替换 online 专用部署。Mac/Companion 没有新包。
-
-## 下载和校验
-
-Linux 包在仓库根目录可执行 `python3 server/packaging/verify-self-hosted-package.py server/packages/v20261002.1/PACKAGE.json`；它只读校验压缩包、每个文件哈希、权限和纯净状态，不解压或启动服务。Windows 使用 `Get-FileHash <ZIP文件名> -Algorithm SHA256` 对照校验文件。
-
-优先点击上面的完整包下载链接。GitHub 的 “Download ZIP” 是仓库快照，不等于此部署包。若克隆仓库，仅取此包可运行：
-
-```bash
-git lfs pull --include='server/packages/v20261002.1/*' --exclude=''
-cd server/packages/v20261002.1
-sha256sum -c ArkhamHorror-Server-Linux-amd64-v20261002.1.tar.gz.sha256
-tar -xzf ArkhamHorror-Server-Linux-amd64-v20261002.1.tar.gz
-cd ArkhamHorror-Server-Linux-amd64-v20261002.1
-sha256sum -c SHA256SUMS
-```
-
-若下载文件只有百余字节且内容包含 `version https://git-lfs.github.com/spec/v1`，那是 LFS 指针，不是包；请重新通过完整包链接或 Git LFS 下载。
-
-必须解压到新目录，不能覆盖旧目录。更新已有实例先停服并验证完整冷备，保留旧版本及原配置，详见 UPDATE.md。发布本包不会自动部署或重启任何现有服务器。
+当前目录仅保留 `v20261015.1`。四个旧版本包目录已在2026-10-19的整理提交中移除，Git提交历史仍然保留；如需追溯旧包，请切换到整理前的历史提交。
+本次没有重新编译或打包，最新目录中的 Linux、Windows、源码归档及校验文件均未改变。
