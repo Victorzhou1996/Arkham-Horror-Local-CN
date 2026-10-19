@@ -14,7 +14,7 @@ Arkham Horror Local CN provides Chinese localization, self-hosted server package
 The default branch is `Server`. Only the `Mac` and `Server` branches are retained. Git commit history remains intact.
 
 Latest source bundle and standalone packages: **[2026.10.15.1 / v20261015.1](server/RELEASE-20261015.md)**, pinned upstream `f6ed09be`.
-The old `server/source/` and `server/release/` directories remain historical Sept23 snapshots. Use the versioned source bundle below for current code; do not mistake historical snapshots for the new release.
+The old `server/source/` directory remains a historical source snapshot. The obsolete `server/release/` runtime snapshot has been removed. Use the versioned source bundle below for current code.
 
 最新完整包：**[Windows v20261015.1 ZIP / Linux amd64 v20261015.1 tar.gz](server/packages/README.md)**，共享19867个相同文件；另提供当前后端、游戏前端、新旧UI、汉化包和独立Build集成源码归档。
 本版统一六项导航与设置入口，更新收藏横幅、存档导出兼容和创伤选择中文；延续10月9日引擎、完整暗物质Build汉化、五套新账号预组、920处卡图存储去重及此前修复。自托管采用online=false，不含用户数据或秘密配置。本次只发布GitHub Server，未部署生产服务器或修改Mac/Companion。[发布说明](server/RELEASE-20261015.md) · **[Mac重编译交接](docs/MAC-REBUILD-20261015.md)**。
